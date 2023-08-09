@@ -18,4 +18,10 @@ const contadorDoEvento = setInterval(function(){
     const quantidadeDeSegundos = Math.floor((espacoDeTempo % (minutos)) / (segundos ))
     console.log(quantidadeDeSegundos)
     document.getElementById('contador').innerHTML = `faltam ${quantidadeDeDias}d ${quantidadeDeHoras}h ${quantidadeDeMinutos}m ${quantidadeDeSegundos}s para o meu aniversario `
+
+
+    if(espacoDeTempo < 0 ){
+        clearInterval(contadorDoEvento)
+        document.getElementById('contador').innerHTML = "Me de parabens "
+    }
 },1000)
