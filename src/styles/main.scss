@@ -1,0 +1,28 @@
+@use '_variaveis';
+@use '_backgroud';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto, sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 960px;
+    height: 400px;
+    margin: 290px auto ;
+    text-align: center;
+    padding: auto;
+
+    #contador{
+        padding-top: 60px;
+        font-size:50px ;
+        line-height: 56px;
+        font-weight: bold;
+        color: variaveis.$white;
+    }
+}
